@@ -1,0 +1,9 @@
+---
+- name: Start and enable httpd service
+  hosts: webservers
+  tasks:
+
+- service:
+         name: httpd
+         state: started
+	    enabled: yes
